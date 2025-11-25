@@ -61,7 +61,7 @@ class SmsReceiver : BroadcastReceiver() {
         date: String,
         receiverNo: String
     ) {
-        val url = "http://player.go2market.in/sms_service/Service.svc/PostSMS"
+        val url = "";
 
         val json = JSONObject().apply {
             put("senderid", from)
@@ -129,7 +129,7 @@ class SmsReceiver : BroadcastReceiver() {
     }
 
     private fun saveAndDelete(context: Context,sms: SmsModel) {
-        val url = "http://player.go2market.in/sms_service/Service.svc/PostSMS"
+        val url ='';
 
         val json = JSONObject().apply {
             put("senderid", sms.sender)
